@@ -10,7 +10,7 @@ class Blog < ApplicationRecord
   end
   friendly_id @title, use: :slugged
 
-  # sử dụng tiếng việt cho slug dm nó chứ, tiếng việt phiền phức thật
+  # sử dụng tiếng việt cho slug, dm nó chứ, tiếng việt phiền phức thật
   def slug_candidates
     slug = title.downcase
     slug = slug.gsub(/á|à|ả|ạ|ã|ă|ắ|ằ|ẳ|ẵ|ặ|â|ấ|ầ|ẩ|ẫ|ậ/,'a')
