@@ -2,7 +2,6 @@
 <h2> <%= link_to "Create New Item", new_portfolio_url %> </h2>
 
 
-
 <% @portfolio_items.each do |portfolio_item| %>
   <p><%=link_to portfolio_item.title, portfolio_show_path(portfolio_item.id) %></p>
   <p><%= portfolio_item.subtitle %></p>
