@@ -1,11 +1,15 @@
 class BlogsController < ApplicationController
   before_action :set_blog, only: [:show, :edit, :update, :destroy]
+  layout "blog"
 
   def index
     @blogs = Blog.all
+    @page_title = "Nha's Blog"
   end
 
   def show
+    @page_title = @blog.title
+    @seo_keywords = @blog.body
   end
 
   def new
