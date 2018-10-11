@@ -3,7 +3,8 @@ class BlogsController < ApplicationController
   layout "blog"
 
   def index
-    @blogs = Blog.all
+    
+    @blogs = Blog.special_blogs
     @page_title = "Nha's Blog"
   end
 
