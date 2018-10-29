@@ -1,9 +1,9 @@
 class BlogsController < ApplicationController
   before_action :set_blog, only: [:show, :edit, :update, :destroy]
   layout "blog"
-
+  access all: [:show, :index], user: {except: [:toggle_status,:destroy, :new, :create, :update, :edit]}, site_admin: :all
   def index
-    
+
     @blogs = Blog.special_blogs
     @page_title = "Nha's Blog"
   end
