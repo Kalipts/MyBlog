@@ -1,0 +1,47 @@
+<!--
+<header class="masthead mb-auto">
+  <div class="inner">
+    <div class="row">
+      <div class="col-md-3">
+        <h3 class="masthead-brand">Nha Phan</h3>
+      </div>
+      <div class="col-md-9">
+        <nav class="nav nav-masthead justify-content-center"  >
+          <%=link_to "Home", root_path, class: 'nav-link active' %>
+          <%= link_to "Blog", blogs_path, class: 'nav-link' %>
+          <%= link_to "Porfolio", portfolios_path, class: 'nav-link' %>
+          <%= link_to "About Me", about_path, class: 'nav-link' %>
+          <%= link_to "Contact", contact_path, class: 'nav-link' %>
+          <%= login_helper 'nav-link' %>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header> -->
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Nha Phan</a>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <%=link_to "Home", root_path, class: 'nav-link active' %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Blog", blogs_path, class: 'nav-link' %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Porfolio", portfolios_path, class: 'nav-link' %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "About Me", about_path, class: 'nav-link' %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Contact", contact_path, class: 'nav-link' %>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
