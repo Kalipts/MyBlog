@@ -35,6 +35,9 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'friendly_id', '~> 5.1.0'
 
+
 gem 'devise', '~> 4.5'
 gem 'bootstrap', '~> 4.0.0'
 gem 'petergate', '~> 1.9', '>= 1.9.1'
+gem 'will_paginate', '~> 3.1', '>= 3.1.6'
+gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
