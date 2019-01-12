@@ -1,8 +1,8 @@
 
 <div class="album py-5 bg-light">
   <div class="container">
-    <h2> <%= link_to "Create New Item", new_portfolio_url if logged_in?(:admin_site) %> </h2>
-    <div class="row">
+    <h2> <%= link_to "Create New Item", new_portfolio_url if logged_in?(:site_admin) %> </h2>
+    <div class="row sortable ui-sortable">
         <%= render partial:'portfolio_item', collection: @portfolio_items %>
     </div>
   </div>
